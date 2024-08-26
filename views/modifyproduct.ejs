@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+   
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <title>
+        Add Product
+    </title>
+</head>
+<body >
+    <form action="/modifyproduct" method="POST" class="form-group" >
+
+      
+
+        
+        <input type="text" class="form-control" name="ID" required placeholder="Id Product for modify" id="">
+        <br>
+        <input type="text" class="form-control" name="Name"  placeholder="Name" id="">
+        
+        <br>
+        <input type="text" class="form-control" name="Idcategory"  placeholder="ID_Category" id="">
+        <br>
+        
+        <input type="text" class="form-control" name="Idcompany"  placeholder="ID_Company" id="">
+       <br>
+        <input type="text" class="form-control" name="Price"  placeholder="Price" id="">
+        <br>
+        
+        <input type="file" class="form-control" name="Source"  placeholder="Source" id="">
+        
+        <br>
+        <br><center>
+        <input type="submit" style="width:177px;" class="btn btn-primary col-12" value="Modify">
+        <br>
+        </center>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>show_product</title>
+</head>
+<body>
+    <center>
+    <div style="margin-top: 10%;">
+        <% if(data.length) { %>
+        <table  >
+            <thead>
+               
+<tr >
+    <th>Id of Product</th>
+    <th>Name Product</th>
+    <th> Name of Category</th>
+    <th> Price</th>
+    <th>  Photo</th>
+</tr>
+</thead>
+
+<tbody>  <%for(var j = 0; j< data1.length; j++) {%>
+     <%for(var i = 0; i< data.length; i++) {%>
+<tr > 
+    
+    <%if(data[i].category_id==data1[j].id){%>
+        
+    <td><%=data[i].id%></td>
+    <td><%=data[i].name%></td>
+   
+    <td> <%=data1[j].category%></td>
+    <td> <%=data[i].price%>$</td>
+    <td> <a href="information/<%=data[i].name%>">
+<img src="images/<%=data[i].source%>" style="width: 77px;height: auto;" alt=""> </a></td>
+<%}%>
+</tr>
+
+<%}%>
+<%}%>
+
+</tbody>
+
+        </table>
+        <%}%>
+    </div></center>
+</body>
+</html>

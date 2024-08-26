@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Show_Category</title>
+</head>
+<body>
+    <center>
+    <div style="margin-top: 10%;">
+        <% if(data.length) { %>
+        <table  >
+            <thead>
+<tr >
+  
+    <th> Name of Category</th>
+   <th>Number of Category</th>
+</tr>
+</thead>
+<tbody>
+     <%for(var i = 0; i< data.length; i++) {%>
+<tr > 
+    
+    <td><%=data[i].id%></td>
+    <td> <%=data[i].category%></td>
+    
+</tr>
+
+<%}%>
+</tbody>
+
+        </table>
+        <%}%>
+    </div></center>
+</body>
+</html>

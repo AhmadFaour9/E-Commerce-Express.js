@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Show_Company</title>
+</head>
+<body>
+    <center>
+    <div style="margin-top: 10%;">
+        <% if(data.length) { %>
+        <table  >
+            <thead>
+<tr >
+  
+    <th>Number of Company</th>
+    <th> Name of Company</th>
+   <th>Logo of Company</th>
+</tr>
+</thead>
+<tbody>
+     <%for(var i = 0; i< data.length; i++) {%>
+<tr > 
+    
+    <td><%=data[i].id%></td>
+    <td> <%=data[i].company%></td>
+    <td><img src="images/<%=data[i].logo%>" style="width:99px;height:auto" alt=""></td>
+
+    
+</tr>
+
+<%}%>
+</tbody>
+
+        </table>
+        <%}%>
+    </div></center>
+</body>
+</html>
